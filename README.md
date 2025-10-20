@@ -99,7 +99,7 @@ Open your browser to: **http://localhost:8000**
   "mcpServers": {
     "altibuddy": {
       "command": "uvx",
-      "args": ["--from", "/path/to/your/package/altibuddy-1.0.0-cp311-cp311-win_amd64.whl", "altibuddy"],
+      "args": ["--python", "3.11.9", "--from", "/path/to/your/package/altibuddy-1.0.0-cp311-cp311-win_amd64.whl", "altibuddy"],
       "env": {
         "JAVA_HOME": "/path/to/your/JRE"
       }
