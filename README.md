@@ -47,6 +47,10 @@ Altibuddy provides two main components:
    - Windows x64
 - **Python**
    - Required for Python package running
+- Microsoft Visual C++ Redistributable for Visual Studio 2015-2022
+   - Required for making vector embeddings
+   - Download: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist
+     - X64: https://aka.ms/vs/17/release/vc_redist.x64.exe
 - **Java Runtime Environment (JRE)**
    - Required for JDBC database connections
    - Download: https://www.oracle.com/java/technologies/downloads/
