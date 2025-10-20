@@ -67,7 +67,7 @@ pip install uv
 # Download altibuddy-1.0.0-cp311-cp311-win_amd64.whl from this repository.
 
 # Run management server
-uvx --from /path/to/the/package/altibuddy-1.0.0-cp311-cp311-win_amd64.whl altibuddy-manage
+uvx --python 3.11.9 --from /path/to/the/package/altibuddy-1.0.0-cp311-cp311-win_amd64.whl altibuddy-manage
 ```
 
 Open your browser to: **http://localhost:8000**
