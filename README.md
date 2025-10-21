@@ -12,6 +12,10 @@ Altibuddy connects AI assistants (like Claude Desktop) to your databases, enabli
 - Natural language SQL query generation
 - Intelligent context(tables and artifacts) search using vector embeddings
 - Secure database operations with fine-grained permissions
+- Altibuddy system artifacts contains
+  - Altibase documentation(https://github.com/altibase/documents, for manuals 7.1 only)
+  - https://aid.altibase.com
+  - sample programs
 
 Altibuddy provides two main components:
 - **MCP Server (`altibuddy`)**: Model Context Protocol server that connects AI assistants to your Altibase databases
