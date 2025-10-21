@@ -13,7 +13,7 @@ Altibuddy connects AI assistants (like Claude Desktop) to your databases, enabli
 - Intelligent context(tables and artifacts) search using vector embeddings
 - Secure database operations with fine-grained permissions
 - Altibuddy system artifacts contains
-  - Altibase documentation(https://github.com/altibase/documents, for manuals 7.1 only)
+  - All of https://github.com/altibase/documents, except for manuals 7.1 only
   - https://aid.altibase.com
   - sample programs
 
