@@ -51,6 +51,7 @@ Altibuddy provides two main components:
    - Windows x64
 - **Python**
    - Required for Python package running
+   - Python 3.11 or above
 - Microsoft Visual C++ Redistributable for Visual Studio 2015-2022
    - Required for making vector embeddings
    - Download: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist
@@ -58,6 +59,7 @@ Altibuddy provides two main components:
 - **Java Runtime Environment (JRE)**
    - Required for JDBC database connections
    - Download: https://www.oracle.com/java/technologies/downloads/
+   - Java 8 or above
 - **AI Client** (choose one):
    - [Claude Desktop](https://claude.ai/download)
    - [Gemini CLI](https://github.com/google-gemini/gemini-cli)
