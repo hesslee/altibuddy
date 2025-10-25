@@ -12,6 +12,10 @@ Altibuddy connects AI assistants (like Claude Desktop) to your databases, enabli
 - Natural language SQL query generation
 - Intelligent context(tables and artifacts) search using vector embeddings
 - Secure database operations with fine-grained permissions
+- Altibuddy system artifacts contains
+  - all of https://github.com/altibase/documents, except for manuals 7.1 only
+  - https://aid.altibase.com
+  - sample programs
 
 Altibuddy provides two main components:
 - **MCP Server (`altibuddy`)**: Model Context Protocol server that connects AI assistants to your Altibase databases
@@ -47,9 +51,15 @@ Altibuddy provides two main components:
    - Windows x64
 - **Python**
    - Required for Python package running
+   - Python 3.11 or above
+- Microsoft Visual C++ Redistributable for Visual Studio 2015-2022
+   - Required for making vector embeddings
+   - Download: https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist
+     - X64: https://aka.ms/vs/17/release/vc_redist.x64.exe
 - **Java Runtime Environment (JRE)**
    - Required for JDBC database connections
    - Download: https://www.oracle.com/java/technologies/downloads/
+   - Java 8 or above
 - **AI Client** (choose one):
    - [Claude Desktop](https://claude.ai/download)
    - [Gemini CLI](https://github.com/google-gemini/gemini-cli)
@@ -67,7 +77,7 @@ pip install uv
 # Download altibuddy-1.0.0-cp311-cp311-win_amd64.whl from this repository.
 
 # Run management server
-uvx --from /path/to/the/package/altibuddy-1.0.0-cp311-cp311-win_amd64.whl altibuddy-manage
+uvx --python 3.11.9 --from /path/to/the/package/altibuddy-1.0.0-cp311-cp311-win_amd64.whl altibuddy-manage
 ```
 
 Open your browser to: **http://localhost:8000**
@@ -95,7 +105,7 @@ Open your browser to: **http://localhost:8000**
   "mcpServers": {
     "altibuddy": {
       "command": "uvx",
-      "args": ["--from", "/path/to/your/package/altibuddy-1.0.0-cp311-cp311-win_amd64.whl", "altibuddy"],
+      "args": ["--python", "3.11.9", "--from", "/path/to/your/package/altibuddy-1.0.0-cp311-cp311-win_amd64.whl", "altibuddy"],
       "env": {
         "JAVA_HOME": "/path/to/your/JRE"
       }
